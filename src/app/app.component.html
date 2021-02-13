@@ -1,0 +1,27 @@
+<div class="row mt-5">
+  <div class="col-6 mx-auto">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Sl</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>DOB</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>*</td>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.dob }}</td>
+          <td>
+            <button class="btn btn-sm btn-warning">edit</button>
+            <!-- <button class="btn btn-sm btn-danger">delete</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
